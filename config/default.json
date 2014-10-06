@@ -1,0 +1,18 @@
+{
+	"cron": {
+		"interval": 3600000
+	},
+
+	"email": {
+		"enabled": false,
+		"sendTo": "hello@world.com",
+		"sendFrom": "iphone6.availability@gmail.com",
+		"nodemailer": {
+			"service": "Gmail",
+		    "auth": {
+		        "user": "gmail.user@gmail.com",
+		        "pass": "userpass"
+		    }
+		}
+	}
+}

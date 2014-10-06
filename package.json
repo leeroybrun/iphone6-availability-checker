@@ -1,0 +1,26 @@
+{
+  "name": "iphone6-availability",
+  "version": "0.1.0",
+  "author": "Leeroy Brun <leeroy.brun@gmail.com>",
+  "description": "Check for availability of iPhone 6 in Apple Stores",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leeroybrun/iphone6-availability-checker.git"
+  },
+  "keywords": [
+    "iphone",
+    "iphone6",
+    "apple",
+    "availability"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.3.0",
+    "nodemailer": "~1.3.0",
+    "request": "~2.45.0"
+  },
+  "engines": [
+    "node"
+  ],
+  "main": "./checker.js"
+}
