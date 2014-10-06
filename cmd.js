@@ -1,10 +1,9 @@
 var request = require('request');
 var nodemailer = require('nodemailer');
 
-var models = require('./models');
-var checker = require('./checker');
-
-var program = require('./cmdArgs');
+var models = require('./lib/models');
+var checker = require('./lib/checker');
+var program = require('./lib/cmdArgs');
 
 console.log('Welcome ! So you want an '+ program.wantedModel);
 console.log('The part number is : '+ program.wantedPartNumber);

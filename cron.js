@@ -1,10 +1,9 @@
 var nodemailer = require('nodemailer');
 
-var models = require('./models');
-var checker = require('./checker');
-var program = require('./cmdArgs');
-
-var config = require('./config');
+var models = require('./lib/models');
+var checker = require('./lib/checker');
+var program = require('./lib/cmdArgs');
+var config = require('./lib/config');
 
 config.loadSync();
 
