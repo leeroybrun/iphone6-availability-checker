@@ -7,7 +7,7 @@ Data is gathered from https://reserve.cdn-apple.com/COUNTRYCODE/LOCALE/reserve/i
 
 2 ways to check availability :
 
-- `cms.js` : one time checker
+- `cmd.js` : one time checker
 - `cron.js` : recuring cron checker
 
 `cmd.js` and `cron.js` have the sames options :
