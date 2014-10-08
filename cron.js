@@ -15,7 +15,13 @@ var checkCron = function() {
 	var found = false;
 
 	checker(program.countryCode, program.locale, program.wantedPartNumber, function(err, availability) {
-		if(err) { return console.error(err); }
+		if(err) { 
+			console.error(err);
+			
+			setTimeout(function() {
+				checkCron();
+			}, config.cron.interval);
+		}
 
 		for(var storeNumber in availability) {
 			if(availability[storeNumber].availability === true) {
